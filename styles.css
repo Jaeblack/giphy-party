@@ -1,0 +1,45 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  .searcher{
+      margin: 50px;
+  }
+
+  .hidden{
+      display: none;
+  }
+
+
+  .container{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .gif{
+      margin: auto;
+      width: 80%;
+  }
+
+  .gif img{
+      margin: auto;
+      padding: 10px;
+      width: 100%;
+      height: 300px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .container{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+  }
